@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/code-box-line.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Shaun's Developer Portfolio - About Me</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header-pages" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">Shaun</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About Me</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link">Portfolio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="button" id="button">Contact Me</a>
+                    </li>
+                </ul>
+
+                <!-- Close Button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Theme Buttons -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- Toggle Button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-2-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="contact section">
+            <h2 class="section__title">Contact Me</h2>
+            
+            <div class="contact__page container grid">
+                <form action="" class="contact__form grid" id="contact-form">
+                    <div class="contact__group grid">
+                        <div class="contact__box">
+                            <input type="text" name="user_name" id="name" required placeholder="Name" class="contact__input">
+                            <label for="name" class="contact__label">First Name</label>
+                        </div>
+                        <div class="contact__box">
+                            <input type="email" name="user_email" id="email" required placeholder="example@email.com" class="contact__input">
+                            <label for="email" class="contact__label">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="contact__box contact__area">
+                        <textarea name="user_message" id="message" required placeholder="Enter your message here" class="contact__input"></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                    </div>
+                        <p class="contact__message" id="contact-message"></p>
+                        <button type="submit" class="contact__send button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <a href="index.html" class="footer__logo">Shaun</a>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="about.html" class="footer__link">About Me</a>
+                    </li>
+                    
+                    <li>
+                        <a href="portfolio.html" class="footer__link">Portfolio</a>
+                    </li>
+                    
+                    <li>
+                        <a href="contact.html" class="footer__link">Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__social">
+                    <a rel="noopener" href="https://github.com/darkphoenixninja92" target="_blank" class="footer__social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a rel="noopener" href="https://www.linkedin.com/in/shaun-pour/" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                    <a rel="noopener" href="https://www.upwork.com/freelancers/~01382d0023424f3319" target="_blank" class="footer__social-link">
+                        <i class="ri-file-code-fill"></i>
+                    </a>
+                    <a rel="noopener" href="https://www.frontendmentor.io/profile/DarkPhoenixNinja92" target="_blank" class="footer__social-link">
+                        <i class="ri-code-box-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; All Rights Reserved By Shaun Pour</span>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
